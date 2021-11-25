@@ -13,7 +13,7 @@
         $sql->execute(array($nome,$sobrenome,$data));
     }
 
-//INSERINDO INFORMAÇÃO AO BANCO DE DADOS
+//INSERINDO INFORMAÇÃO AO BANCO DE DADOS MYSQL
 ?>
 
 <!DOCTYPE html>

@@ -16,7 +16,7 @@
         $sql_insert->execute(array($nome,$sobrenome,$data));
         $sql_update->execute();
     }
-
+//Usando UPDATE para atualização de dados, WHERE e OR para condição da atualização.
 
 ?>
 

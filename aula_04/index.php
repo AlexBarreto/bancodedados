@@ -20,7 +20,7 @@
         $sql_update->execute(array($nome_,$sobrenome_,$id));
         $sql_delete->execute(array($id));
     }
-
+//Usando DELETE para apagar dados.
 
 ?>
 

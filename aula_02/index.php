@@ -13,7 +13,7 @@
         $sql->execute(array($nome,$sobrenome,$data));
     }
 
-
+//INSERINDO INFORMAÇÃO AO BANCO DE DADOS
 ?>
 
 <!DOCTYPE html>
@@ -27,3 +27,5 @@
         <input type ="submit" name = "acao" value = "Enviar">
     </form>
 </body>
+
+

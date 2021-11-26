@@ -11,5 +11,6 @@
     } catch (Exception $e) {
         echo '<h1>Erro ao conectar...</h1>';
     }
-
+//Forma segura de acessar o banco de dados com o PDO.
 ?>
+

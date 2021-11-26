@@ -1,8 +1,9 @@
+
 <?php
     define('HOST', 'localhost');
     define('DB','clientes');
     define('USER','root');
-    define('PASS','111');
+    define('PASS','');
 
     try {
         $pdo = new PDO('mysql:host='.HOST.';dbname='.DB,USER,PASS,array(PDO::
@@ -12,4 +13,18 @@
         echo '<h1>Erro ao conectar...</h1>';
     }
 
+    $sql = $pdo->prepare("SELECT * FROM `cliente`");
+
+    $sql->execute();
+
+    $cliente = $sql->fetchAll();
+
+   
+    foreach($cliente as $key => $value) {
+
+        echo $value['nome'];
+        echo '<hr>';
+    }
+
 ?>
+

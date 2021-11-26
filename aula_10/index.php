@@ -3,7 +3,7 @@
     $pdo = new PDO('mysql:host=localhost;dbname=clientes','root','');
 
 
-        $sql = $pdo->prepare("INSERT INTO `clientes` LIKE '%g%'");//LIKE utilizado para pesquisar letra ou palavra chave no banco de dados com paramentros -> %iniciaCom, %temPeloMenos%, finalizaCom%
+        $sql = $pdo->prepare("INSERT INTO `clientes` WHERE emal LIKE '%g%'");//LIKE utilizado para pesquisar letra ou palavra chave no banco de dados com paramentros -> %iniciaCom, %temPeloMenos%, finalizaCom%
 
         $sql->execute();
 
